@@ -1,6 +1,10 @@
 package ie.atu.carsalesapp_cart.controller;
 
+import ie.atu.carsalesapp_cart.entity.Car;
+import ie.atu.carsalesapp_cart.entity.Cart;
 import ie.atu.carsalesapp_cart.service.CartService;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,10 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/cart")
 public class CartController {
 
-    private final CartService cartService;
-
-    public CartController(CartService cartService)
+    @PostMapping
+    public String makeCart(@RequestBody Car car)
     {
-        this.cartService = cartService;
+        return "Microservice on port 8081 called";
     }
 }
