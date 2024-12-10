@@ -1,6 +1,5 @@
 package ie.atu.carsalesapp_cart.service;
 
-import ie.atu.carsalesapp_cart.client.CartClient;
 import ie.atu.carsalesapp_cart.repository.CartRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
